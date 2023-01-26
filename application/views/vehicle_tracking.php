@@ -101,8 +101,8 @@ getLocation();
  <?php 
  
 // echo $movements['watch_list_lat'].$movements['watch_list_lon'];
- $moving_latitude = $movements['watch_list_lat'];
- $moving_longtude = $movements['watch_list_lon'];
+ $moving_latitude = @$movements['watch_list_lat'];
+ $moving_longtude = @$movements['watch_list_lon'];
  
  $coords = [];
  foreach ($route_breakdown as $row) {
